@@ -8415,6 +8415,16 @@ p {
   color: #fff;
 }
 
+/*header*/
+
+#logout {
+  cursor: default;
+}
+
+#logout:hover {
+  background-color: transparent;
+}
+
 /*footer*/
 
 footer {
