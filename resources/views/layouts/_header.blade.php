@@ -5,7 +5,7 @@
 			<nav>
 				<ul class="nav navbar-nav navbar-right">
 					@if(Auth::check())
-					<li class="nav-item"><a href="#">用户列表</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ route('users.index') }}">用户列表</a></li>
 					<li class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">
 							{{ Auth::user()->name }} <b class="caret"></b>
