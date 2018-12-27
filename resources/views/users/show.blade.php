@@ -10,6 +10,14 @@
 					<section class="user_info">
 						@include('shared._user_info',['user'=>$user])
 					</section>
+						
+					<div class="mt-1 mb-2">
+						@if(Auth::check())
+							@include('users._follow_form')
+						@endif
+					</div>
+					<br>
+
 					<section class="stats mt-4">
 						@include('shared._stats',['user'=>$user])
 					</section>
